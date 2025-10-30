@@ -1,0 +1,654 @@
+/* Custom Styles for Windows 11 Installation Tutorial - Windows 11 Theme */
+
+:root {
+    --primary-color: #0078d7;  /* Windows blue */
+    --primary-dark: #106ebe;   /* Darker blue */
+    --primary-light: #e5f2fa;  /* Light blue */
+    --secondary-color: #333333;
+    --light-bg: #f3f3f3;      /* Light gray background */
+    --border-color: #d0d0d0;   /* Subtle border */
+    --card-bg: #ffffff;
+    --accent-color: #005a9e;   /* Even darker blue for accents */
+    --success-color: #107c10;  /* Windows green */
+    --warning-color: #d83b01;  /* Windows red for warnings */
+    --windows11-bg: #f0f0f0;   /* Windows 11 light gray */
+    --windows11-panel: #ffffff; /* Windows 11 panel color */
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--windows11-bg);
+    line-height: 1.6;
+}
+
+body {
+    font-family: 'Ubuntu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+/* Navigation */
+body {
+    background-color: var(--windows11-bg);
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: var(--primary-color) !important;
+    font-size: 1.5rem;
+}
+
+/* Tutorial Sidebar Navigation for Windows 11 */
+.tutorial-sidebar {
+    position: sticky;
+    top: 20px;
+    align-self: start;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.list-group-item {
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 1.25rem;
+    color: #333;
+    transition: all 0.2s;
+    border-radius: 0;
+    position: relative;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+.list-group-item:hover {
+    background-color: #f8f8f8;
+    color: var(--primary-color);
+}
+
+.list-group-item.active {
+    background-color: #f0f8ff;
+    color: var(--primary-color) !important;
+    border-left: 3px solid var(--primary-color);
+    font-weight: 500;
+}
+
+/* Numbered list style for sidebar */
+.list-group-item::before {
+    content: attr(data-number);
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    margin-right: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Card Styling for Windows 11 */
+.card {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    background-color: var(--windows11-panel);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 1.25rem;
+    font-weight: 500;
+    color: #333;
+    border-radius: 11px 11px 0 0;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Tutorial Content Styling */
+h1 {
+    color: #212121;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+    font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+}
+
+h3 {
+    color: #333;
+    font-size: 1.4rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;
+    font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+}
+
+h4 {
+    color: #444;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+    font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.lead {
+    font-size: 1.4rem;
+    color: #495057;
+    margin-bottom: 1.5rem;
+    font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: var(--primary-color) !important;
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.list-group-item {
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+/* Section Content Styling */
+.section-content {
+    display: none;
+}
+
+.section-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Image Styling for Windows 11 */
+.img-fluid {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.img-fluid:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Button Styling for Windows 11 */
+.btn {
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: all 0.2s;
+    font-weight: 500;
+    border: 1px solid transparent;
+    background-color: #f3f3f3;
+    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+}
+
+.btn:hover {
+    background-color: #eaeaea;
+    transform: translateY(-1px);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: white;
+}
+
+.btn-success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+    color: white;
+}
+
+.btn-lg {
+    border-radius: 8px;
+}
+
+.btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* Alerts */
+.alert {
+    border-radius: 0;
+    border: 1px solid transparent;
+    padding: 1rem 1rem;
+    box-shadow: none;
+}
+
+.alert-info {
+    background-color: #e5f2fa;
+    color: #004578;
+    border-left: 4px solid var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.alert-warning {
+    background-color: #fde7e9;
+    color: #a80000;
+    border-left: 4px solid var(--warning-color);
+    border-color: var(--warning-color);
+}
+
+.alert-success {
+    background-color: #dff6dd;
+    color: #107c10;
+    border-left: 4px solid var(--success-color);
+    border-color: var(--success-color);
+}
+
+/* Footer */
+footer {
+    background-color: white;
+    border-top: 1px solid var(--border-color);
+    margin-top: 2rem;
+}
+
+/* Responsive adjustments for Windows 11 */
+@media (max-width: 992px) {
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .tutorial-sidebar {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 280px;
+        height: 100vh;
+        z-index: 1000;
+        background: white;
+        transition: left 0.3s ease;
+        margin-bottom: 0;
+        border-radius: 0;
+        border-right: 1px solid var(--border-color);
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    }
+    
+    .tutorial-sidebar.show {
+        left: 0;
+    }
+    
+    .sidebar-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 999;
+        backdrop-filter: blur(2px);
+    }
+    
+    .sidebar-overlay.show {
+        display: block;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--primary-color);
+        padding: 0.5rem;
+    }
+}
+
+/* Show hamburger button only on mobile */
+.mobile-menu-btn {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .tutorial-sidebar {
+        position: fixed;
+        top: 0;
+        left: -300px; /* Hidden initially */
+        width: 280px;
+        height: 100vh;
+        z-index: 1000;
+        background: white;
+        transition: left 0.3s ease;
+        margin-bottom: 0;
+        border-radius: 0;
+        border-right: 1px solid var(--border-color);
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        display: block !important; /* Override display property on mobile */
+    }
+    
+    .tutorial-sidebar.show {
+        left: 0; /* Show sidebar when 'show' class is added */
+    }
+    
+    .row {
+        flex-direction: row;
+    }
+    
+    .col-lg-3, .col-lg-9 {
+        width: 100%;
+    }
+    
+    .col-lg-9 {
+        order: 2;
+    }
+    
+    .col-lg-3 {
+        display: none;
+    }
+}
+
+/* Show sidebar by default on desktop */
+@media (min-width: 992px) {
+    .tutorial-sidebar {
+        position: static;
+        top: auto;
+        left: auto;
+        width: auto;
+        height: auto;
+        z-index: auto;
+        box-shadow: none;
+        display: block !important;
+    }
+    
+    .col-lg-3 {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .d-flex.justify-content-between {
+        flex-direction: column;
+    }
+    
+    .tutorial-nav .btn:first-child {
+        order: 2;
+        margin-top: 0.5rem;
+    }
+    
+    .tutorial-nav .btn:last-child {
+        order: 1;
+    }
+    
+    .row > [class*="col-"] {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    .card-body {
+        padding: 0.75rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .btn-lg {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* Warning notification styling */
+.warning-notification {
+    background-color: #fff4e6; /* Light orange background */
+    border-left: 4px solid var(--warning-color);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.warning-notification .warning-icon {
+    font-size: 1.5rem;
+    color: var(--warning-color);
+    margin-right: 0.75rem;
+    margin-top: 0.2rem;
+    min-width: 24px;
+}
+
+.warning-notification .warning-content {
+    flex: 1;
+}
+
+.warning-notification h5 {
+    color: var(--warning-color);
+    margin: 0 0 0.5rem 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.warning-notification p {
+    margin: 0;
+    color: #545454;
+    font-size: 1rem;
+}
+
+/* Print styles */
+@media print {
+    .tutorial-sidebar, .navbar, .btn, footer, .mobile-menu-btn, .warning-notification {
+        display: none;
+    }
+    
+    .col-lg-9 {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    body {
+        background-color: white;
+    }
+    
+    .card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}
+
+/* Tutorial content sections */
+.tutorial-section {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.tutorial-section:last-child {
+    border-bottom: none;
+}
+
+/* bs5-lightbox customizations */
+/* bs5-lightbox is built on Bootstrap modal, so we can customize the modal styling */
+.modal-lightbox .modal-content {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.modal-lightbox .modal-body {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.modal-lightbox .modal-body img {
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: 4px;
+}
+
+.modal-lightbox .btn-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.modal-lightbox .btn-close:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.modal-lightbox .modal-dialog {
+    max-width: 95%;
+    margin: 2rem auto;
+}
+
+.modal-lightbox .modal-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+    z-index: 10;
+}
+}
+
+/* Progress indicator */
+.progress-container {
+    background-color: #e9ecef;
+    border-radius: 2px;
+    height: 4px;
+    margin: 1rem 0;
+    overflow: visible;
+}
+
+.progress-bar {
+    background-color: var(--primary-color);
+    border-radius: 2px;
+    height: 4px;
+    transition: width 0.3s;
+}
+
+/* Tutorial navigation buttons */
+.tutorial-nav {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+}

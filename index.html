@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Instalasi Windows 10 dengan Rufus - Panduan Lengkap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Tutorial Windows 10</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Langkah-langkah</h5>
+                    </div>
+                    <div class="list-group list-group-flush">
+                        <a href="#step1" class="list-group-item list-group-item-action">1. Persiapan</a>
+                        <a href="#step2" class="list-group-item list-group-item-action">2. Download Rufus</a>
+                        <a href="#step3" class="list-group-item list-group-item-action">3. Download ISO Windows 10</a>
+                        <a href="#step4" class="list-group-item list-group-item-action">4. Membuat USB Bootable</a>
+                        <a href="#step5" class="list-group-item list-group-item-action">5. Pengaturan BIOS</a>
+                        <a href="#step6" class="list-group-item list-group-item-action">6. Instalasi Windows 10</a>
+                        <a href="#step7" class="list-group-item list-group-item-action">7. Konfigurasi Awal</a>
+                        <a href="#step8" class="list-group-item list-group-item-action">8. Kesimpulan</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tutorial Content -->
+            <div class="col-lg-9">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h1 class="mb-0">Tutorial Instalasi Windows 10 dengan Rufus</h1>
+                    </div>
+                    <div class="card-body">
+                        <p class="lead">Petunjuk langkah-demi-langkah untuk menginstal Windows 10 menggunakan Rufus, sebuah alat gratis untuk membuat USB bootable.</p>
+                        
+                        <div class="alert alert-info">
+                            <strong>Catatan:</strong> Tutorial ini dirancang untuk pengguna Indonesia yang ingin menginstal Windows 10 secara legal dan aman.
+                        </div>
+                        
+                        <!-- Progress indicator -->
+                        <div class="progress-container mb-4">
+                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                        <!-- Step 1 -->
+                        <div class="tutorial-section">
+                            <h2 id="step1">1. Persiapan</h2>
+                            <p>Sebelum Anda memulai, pastikan Anda memiliki semua komponen yang diperlukan:</p>
+                            <ul>
+                                <li>Komputer dengan Windows, macOS, atau Linux</li>
+                                <li>USB flash drive dengan kapasitas minimal 8GB</li>
+                                <li>File ISO Windows 10 resmi dari Microsoft</li>
+                                <li>Aplikasi Rufus terbaru</li>
+                                <li>Kunci produk Windows 10 (jika Anda memiliki lisensi)</li>
+                            </ul>
+                            
+                            <!-- Placeholder for image -->
+                            <a href="images/persiapan.jpg" data-lightbox="tutorial" data-title="Perlengkapan yang dibutuhkan">
+                                <img src="images/persiapan.jpg" class="img-fluid mb-3" alt="Perlengkapan persiapan" style="max-height: 300px;">
+                            </a>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="tutorial-section">
+                            <h2 id="step2">2. Download Rufus</h2>
+                            <p>Rufus adalah alat gratis dan open-source yang digunakan untuk membuat USB bootable. Anda dapat mendownloadnya dari situs resmi:</p>
+                            <p><a href="https://rufus.ie" target="_blank" class="btn btn-primary">Download Rufus</a></p>
+                            <p>Setelah download, ekstrak dan jalankan file aplikasinya. Tidak perlu menginstal.</p>
+                            
+                            <a href="images/rufus-download.jpg" data-lightbox="tutorial" data-title="Halaman download Rufus">
+                                <img src="images/rufus-download.jpg" class="img-fluid mb-3" alt="Download Rufus" style="max-height: 300px;">
+                            </a>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="tutorial-section">
+                            <h2 id="step3">3. Download ISO Windows 10</h2>
+                            <p>Anda perlu file ISO Windows 10 resmi dari Microsoft. Kunjungi situs Microsoft dan download file ISO Windows 10.</p>
+                            <p><a href="https://www.microsoft.com/software-download/windows10" target="_blank" class="btn btn-primary">Download ISO Windows 10</a></p>
+                            
+                            <a href="images/download-iso.jpg" data-lightbox="tutorial" data-title="Halaman download ISO Windows 10">
+                                <img src="images/download-iso.jpg" class="img-fluid mb-3" alt="Download ISO Windows 10" style="max-height: 300px;">
+                            </a>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="tutorial-section">
+                            <h2 id="step4">4. Membuat USB Bootable</h2>
+                            <p>Ikuti langkah-langkah berikut untuk membuat USB bootable dengan Rufus:</p>
+                            <ol>
+                                <li>Sisipkan USB flash drive ke komputer</li>
+                                <li>Jalankan aplikasi Rufus</li>
+                                <li>Pilih USB drive Anda dari daftar perangkat</li>
+                                <li>Klik ikon folder di sebelah "Pilih" untuk memilih file ISO Windows 10 Anda</li>
+                                <li>Pastikan pengaturan berikut dipilih:
+                                    <ul>
+                                        <li>Sistem File: NTFS</li>
+                                        <li>Tipe Partisi: GPT (jika Anda menggunakan UEFI)</li>
+                                        <li>Skema Target Sistem: UEFI (non-CSM)</li>
+                                    </ul>
+                                </li>
+                                <li>Klik "Mulai" dan tunggu proses selesai</li>
+                            </ol>
+                            
+                            <a href="images/rufus-configuration.jpg" data-lightbox="tutorial" data-title="Konfigurasi Rufus untuk membuat USB bootable">
+                                <img src="images/rufus-configuration.jpg" class="img-fluid mb-3" alt="Konfigurasi Rufus" style="max-height: 300px;">
+                            </a>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="tutorial-section">
+                            <h2 id="step5">5. Pengaturan BIOS</h2>
+                            <p>Sebelum menginstal Windows 10, Anda harus mengatur BIOS/UEFI komputer Anda untuk boot dari USB:</p>
+                            <ol>
+                                <li>Restart komputer dan masuk ke BIOS/UEFI (biasanya dengan menekan F2, F12, DEL, atau ESC saat startup)</li>
+                                <li>Cari pengaturan "Boot" atau "Pengaturan Boot"</li>
+                                <li>Atur USB drive sebagai prioritas boot pertama</li>
+                                <li>Simpan perubahan dan restart komputer</li>
+                            </ol>
+                            
+                            <a href="images/bios-setting.jpg" data-lightbox="tutorial" data-title="Contoh pengaturan BIOS untuk boot dari USB">
+                                <img src="images/bios-setting.jpg" class="img-fluid mb-3" alt="Pengaturan BIOS" style="max-height: 300px;">
+                            </a>
+                        </div>
+
+                        <!-- Step 6 -->
+                        <div class="tutorial-section">
+                            <h2 id="step6">6. Instalasi Windows 10</h2>
+                            <p>Setelah komputer boot dari USB, ikuti langkah-langkah instalasi:</p>
+                            <ol>
+                                <li>Pilih bahasa, waktu, dan format keyboard Anda</li>
+                                <li>Klik "Instal Sekarang"</li>
+                                <li>Masukkan kunci produk jika diminta (lewati jika Anda akan memasukkannya nanti)</li>
+                                <li>Setujui persyaratan lisensi</li>
+                                <li>Pilih "Instal Windows" bukan upgrade</li>
+                                <li>Pilih drive tempat Anda ingin menginstal Windows (hati-hati memilih drive)</li>
+                                <li>Tunggu proses instalasi selesai</li>
+                            </ol>
+                            
+                            <a href="images/windows-installation.jpg" data-lightbox="tutorial" data-title="Proses instalasi Windows 10">
+                                <img src="images/windows-installation.jpg" class="img-fluid mb-3" alt="Instalasi Windows 10" style="max-height: 300px;">
+                            </a>
+                        </div>
+
+                        <!-- Step 7 -->
+                        <div class="tutorial-section">
+                            <h2 id="step7">7. Konfigurasi Awal</h2>
+                            <p>Setelah instalasi selesai, Anda akan melalui proses konfigurasi awal:</p>
+                            <ul>
+                                <li>Pilih pengaturan wilayah Anda</li>
+                                <li>Masukkan nama pengguna dan password</li>
+                                <li>Atur keamanan pengenal (opsional)</li>
+                                <li>Pilih pengaturan privasi</li>
+                                <li>Tunggu Windows menyiapkan desktop Anda</li>
+                            </ul>
+                            
+                            <a href="images/setup-wizard.jpg" data-lightbox="tutorial" data-title="Wizard konfigurasi awal Windows 10">
+                                <img src="images/setup-wizard.jpg" class="img-fluid mb-3" alt="Setup Wizard" style="max-height: 300px;">
+                            </a>
+                        </div>
+
+                        <!-- Step 8 -->
+                        <div class="tutorial-section">
+                            <h2 id="step8">8. Kesimpulan</h2>
+                            <p>Selamat! Anda telah berhasil menginstal Windows 10 menggunakan Rufus. Sekarang Anda dapat mulai menggunakan sistem operasi baru Anda.</p>
+                            <p>Jika Anda menemui masalah selama proses instalasi, periksa kembali:</p>
+                            <ul>
+                                <li>Kompatibilitas hardware dengan Windows 10</li>
+                                <li>File ISO yang diunduh tidak rusak</li>
+                                <li>USB flash drive berfungsi dengan baik</li>
+                                <li>Memori RAM cukup untuk proses instalasi</li>
+                            </ul>
+                            
+                            <div class="alert alert-success mt-4">
+                                <h4>Selesai!</h4>
+                                <p>Anda telah menyelesaikan tutorial instalasi Windows 10 dengan Rufus. Jika tutorial ini membantu, silakan bagikan kepada orang lain yang mungkin membutuhkan!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-4">
+                    <a href="#" class="btn btn-primary">Kembali ke Atas</a>
+                    <a href="#" class="btn btn-outline-primary">Bagikan Tutorial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light mt-5 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Tutorial Windows 10 dengan Rufus. Semua hak dilindungi.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-decoration-none">Kebijakan Privasi</a> | 
+                    <a href="#" class="text-decoration-none">Syarat dan Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
